@@ -1,0 +1,7 @@
+<% @news.each do |news| %>
+  <p><b><%= news.title %></b><p>
+  <p><%= news.description %></p>
+  <a href="<%= news.link %>" target="_blank">Ver Mais no Site</a>
+  <p>Data de atualização: <%= news.time %></p>
+  <hr />
+<% end %>
